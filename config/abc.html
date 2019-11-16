@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn"></div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #btn{
+            position: relative;
+            
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        #btn::after{
+            position: absolute;
+            content: '';
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-10px,-10px);
+            width:0;
+            height:0;
+            border: 10px solid transparent;
+            border-left: 20px solid white;
+        }
+    </style>
+</body>
+</html>
